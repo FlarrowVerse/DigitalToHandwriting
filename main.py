@@ -1,7 +1,6 @@
 import os
 import cv2
 import numpy as np
-import pandas as pd
 
 def getCompressed(img, dim): # to get the smaller image
     resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
