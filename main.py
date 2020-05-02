@@ -99,7 +99,8 @@ def writeText(text, dim):
     cv2.imshow('result', finalImg)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    cv2.imwrite('Output\\result.jpg',finalImg)
+    outFile = os.path.join('Output', 'result.jpg')
+    cv2.imwrite(outFile,finalImg)
 
 
 
